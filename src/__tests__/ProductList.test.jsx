@@ -1,7 +1,6 @@
 import React from 'react'
 import { render, screen, fireEvent } from '@testing-library/react'
 import ProductList, { sampleProducts } from '../components/ProductList'
-import '@testing-library/jest-dom'
 
 describe('ProductList Component', () => {
   const mockOnAddToCart = jest.fn()

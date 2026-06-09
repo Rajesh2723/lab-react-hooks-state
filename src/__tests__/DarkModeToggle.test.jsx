@@ -1,7 +1,6 @@
 import React from 'react'
 import { render, screen, fireEvent } from '@testing-library/react'
 import DarkModeToggle from '../components/DarkModeToggle'
-import '@testing-library/jest-dom'
 
 describe('DarkModeToggle Component', () => {
   test('renders button with initial dark mode text', () => {

@@ -1,7 +1,6 @@
 import React from 'react'
 import { render, screen } from '@testing-library/react'
 import Cart from '../components/Cart'
-import '@testing-library/jest-dom'
 
 describe('Cart Component', () => {
   test('renders cart heading', () => {
