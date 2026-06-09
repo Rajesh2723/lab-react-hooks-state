@@ -1,6 +1,6 @@
 import React from 'react'
 import { render, screen, fireEvent } from '@testing-library/react'
-import { describe, test, expect, beforeEach, jest } from '@jest/globals'
+import { describe, test, expect, beforeEach, vi } from 'vitest'
 import ProductCard from '../components/ProductCard'
 
 describe('ProductCard Component', () => {
@@ -12,7 +12,7 @@ describe('ProductCard Component', () => {
     inStock: true,
   }
 
-  const mockOnAddToCart = jest.fn()
+  const mockOnAddToCart = vi.fn()
 
   beforeEach(() => {
     mockOnAddToCart.mockClear()

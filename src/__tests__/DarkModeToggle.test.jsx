@@ -1,6 +1,6 @@
 import React from 'react'
 import { render, screen, fireEvent } from '@testing-library/react'
-import { describe, test, expect, beforeEach, jest } from '@jest/globals'
+import { describe, test, expect, beforeEach, vi } from 'vitest'
 import DarkModeToggle from '../components/DarkModeToggle'
 
 describe('DarkModeToggle Component', () => {
@@ -17,7 +17,7 @@ describe('DarkModeToggle Component', () => {
   })
 
   test('calls onToggle when button is clicked', () => {
-    const mockOnToggle = jest.fn()
+    const mockOnToggle = vi.fn()
     render(<DarkModeToggle darkMode={false} onToggle={mockOnToggle} />)
     const button = screen.getByRole('button')
 
@@ -26,7 +26,7 @@ describe('DarkModeToggle Component', () => {
   })
 
   test('button is clickable', () => {
-    const mockOnToggle = jest.fn()
+    const mockOnToggle = vi.fn()
     render(<DarkModeToggle darkMode={false} onToggle={mockOnToggle} />)
     const button = screen.getByRole('button')
 

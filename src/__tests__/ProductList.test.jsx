@@ -1,10 +1,10 @@
 import React from 'react'
 import { render, screen, fireEvent } from '@testing-library/react'
-import { describe, test, expect, beforeEach, jest } from '@jest/globals'
+import { describe, test, expect, beforeEach, vi } from 'vitest'
 import ProductList, { sampleProducts } from '../components/ProductList'
 
 describe('ProductList Component', () => {
-  const mockOnAddToCart = jest.fn()
+  const mockOnAddToCart = vi.fn()
 
   beforeEach(() => {
     mockOnAddToCart.mockClear()
