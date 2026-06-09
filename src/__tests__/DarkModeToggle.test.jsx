@@ -1,5 +1,6 @@
 import React from 'react'
 import { render, screen, fireEvent } from '@testing-library/react'
+import { describe, test, expect, beforeEach, jest } from '@jest/globals'
 import DarkModeToggle from '../components/DarkModeToggle'
 
 describe('DarkModeToggle Component', () => {
